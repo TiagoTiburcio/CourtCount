@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/score_a_linear_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/team_a"
+                android:textSize="18sp"
+                android:layout_margin="15dp"/>
+
+            <TextView
+                android:id="@+id/score_a_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_margin="20dp"
+                android:text="@string/value_init"
+                android:textColor="@android:color/black"
+                android:textSize="36sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="sum3PointsA"
+                android:text="@string/points_3"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="sum2PointsA"
+                android:text="@string/points_2"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="7dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="sum1PointsA"
+                android:text="@string/free_throw"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="7dp"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray"
+            />
+        <LinearLayout
+            android:id="@+id/score_b_linear_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/team_b"
+                android:textSize="18sp"
+                android:layout_margin="15dp"
+                />
+
+            <TextView
+                android:id="@+id/score_b_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_margin="20dp"
+                android:text="@string/value_init"
+                android:textColor="@android:color/black"
+                android:textSize="36sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="sum3PointsB"
+                android:text="@string/points_3"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="sum2PointsB"
+                android:text="@string/points_2"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="7dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="sum1PointsB"
+                android:text="@string/free_throw"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="7dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"
+        android:onClick="resetScore"
+        android:text="@string/reset_scores" />
+</RelativeLayout>

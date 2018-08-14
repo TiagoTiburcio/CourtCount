@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Placar Basquete</string>
+    <string name="team_a">Team A</string>
+    <string name="team_b">Team B</string>
+    <string name="value_init">0</string>
+    <string name="points_3">+ 3 POINTS</string>
+    <string name="points_2">+ 2 POINTS</string>
+    <string name="free_throw">FREE THROW</string>
+    <string name="reset_scores">Reset Scores</string>
+</resources>
